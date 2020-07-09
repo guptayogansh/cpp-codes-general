@@ -15,7 +15,7 @@ void BF(int x, int y)
 
     dist[x] = 0;
 
-    for (int i = 1; i < V - 1; i++)
+    for (int i = 1; i <= V - 1; i++)
     {
         for (auto e : edges)
         {

@@ -1,0 +1,28 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "echo",
+      "type": "shell",
+      "command": "g++ -g Short Routes 1.cpp",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "type": "shell",
+      "label": "cpp.exe build active file",
+      "command": "C:\\Users\\GuptaY\\Desktop\\MinGW1\\bin\\cpp.exe",
+      "args": [
+        "-g",
+        "${file}",
+        "-o",
+        "${fileDirname}\\${fileBasenameNoExtension}.exe"
+      ],
+      "options": {
+        "cwd": "C:\\Users\\GuptaY\\Desktop\\MinGW1\\bin"
+      }
+    }
+  ]
+}
