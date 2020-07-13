@@ -32,7 +32,7 @@ void dfs(int n, int pn = -1)
         else
             dfs(nd, n);
     }
-    act4[n] = 0;
+    act[n] = 0;
 }
 
 int main()
