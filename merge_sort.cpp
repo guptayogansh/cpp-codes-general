@@ -8,7 +8,7 @@ void Merge(int *a, int start, int end, int mid)
 	int i, j, k, temp[mxN];
 	i = start;
 	j = mid + 1;
-	k = 0;
+	k = start;
 	
 	while (i <= mid and j <= end)
 	{
@@ -19,7 +19,7 @@ void Merge(int *a, int start, int end, int mid)
 	while (i <= mid) temp[k++] = a[i++];
 	while (j <= end) temp[k++] = a[j++];
  
-	for (i = start; i <= end; i++) a[i] = temp[i-start];
+	for (i = start; i <= end; i++) a[i] = temp[i];
 }
  
 
